@@ -3,7 +3,7 @@
   "require": {
     "codeception/codeception": "*",
     "browserstack/browserstack-local": "dev-master",
-    "codegyre/robo": "*",
+    "consolidation/robo": "*",
     "morcano/robo-paracept": "@dev"
   },
   "scripts": {
