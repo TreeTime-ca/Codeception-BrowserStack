@@ -4,7 +4,7 @@
     "codeception/codeception": "*",
     "browserstack/browserstack-local": "dev-master",
     "codegyre/robo": "*",
-    "codeception/robo-paracept": "@dev"
+    "morcano/robo-paracept": "@dev"
   },
   "scripts": {
     "test": "composer single && composer local && composer parallel",
