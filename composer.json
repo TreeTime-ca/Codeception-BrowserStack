@@ -7,14 +7,14 @@
     "morcano/robo-paracept": "@dev"
   },
   "scripts": {
-    "test": "composer single && composer local && composer parallel",
-    "single": "vendor/bin/codecept run --env single -g single",
-    "local": "vendor/bin/codecept run --env local -g local",
-    "parallel": "vendor/bin/robo parallel:all"
+    "browserstack-test": "composer single && composer local && composer parallel",
+    "browserstack-single": "vendor/bin/codecept run --env single -g single",
+    "browserstack-local": "vendor/bin/codecept run --env local -g local",
+    "browserstack-parallel": "vendor/bin/robo parallel:all"
   },
   "autoload": {
     "psr-4": {
-      "": "lib/"
+      "BrowserStack\\": "lib/"
     }
   }
 }
