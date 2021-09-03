@@ -13,8 +13,8 @@
     "browserstack-parallel": "vendor/bin/robo parallel:all"
   },
   "autoload": {
-    "psr-4": {
-      "BrowserStack\\": "lib/"
-    }
+    "classmap": [
+      "lib/"
+    ]
   }
 }
