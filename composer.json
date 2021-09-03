@@ -1,4 +1,5 @@
 {
+  "name": "browserstack/codeception-browserstack",
   "require": {
     "codeception/codeception": "*",
     "browserstack/browserstack-local": "dev-master",
@@ -12,6 +13,8 @@
     "parallel": "vendor/bin/robo parallel:all"
   },
   "autoload": {
-    "classmap": ["lib/"]
+    "classmap": [
+      "lib/"
+    ]
   }
 }
