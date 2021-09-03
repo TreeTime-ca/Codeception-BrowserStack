@@ -13,8 +13,8 @@
     "parallel": "vendor/bin/robo parallel:all"
   },
   "autoload": {
-    "classmap": [
-      "lib/"
-    ]
+    "psr-4": {
+      "": "lib/"
+    }
   }
 }
