@@ -1,20 +1,21 @@
 {
   "name": "browserstack/codeception-browserstack",
   "require": {
-    "codeception/codeception": "*",
+    "codeception/codeception": "^4.1",
+    "codeception/module-webdriver": "^1.4",
     "browserstack/browserstack-local": "dev-master",
-    "consolidation/robo": "*",
+    "consolidation/robo": "^2.2",
     "morcano/robo-paracept": "@dev"
   },
   "scripts": {
-    "browserstack-test": "composer single && composer local && composer parallel",
+    "browserstack-test": "@browserstack-single && @browserstack-local && @browserstack-parallel",
     "browserstack-single": "vendor/bin/codecept run --env single -g single",
     "browserstack-local": "vendor/bin/codecept run --env local -g local",
     "browserstack-parallel": "vendor/bin/robo parallel:all"
   },
   "autoload": {
-    "classmap": [
-      "lib/"
-    ]
+    "psr-4": {
+      "BrowserStack\\": "lib/"
+    }
   }
 }
